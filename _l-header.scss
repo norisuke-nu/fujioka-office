@@ -1,0 +1,52 @@
+@import "../1-setting/color";
+@import "../1-setting/mixin";
+
+
+/*header*/
+.header{
+    width:100%;
+    /*min-height: 111px;*/
+    position: fixed;
+    top:0;
+    z-index:9999;
+    color:$header-font-color;
+    background-color:$header-bg-color;
+    
+    &-content{
+        width:100%; 
+        height:100%;
+        margin:4.6rem auto 4.6rem auto;
+        @include flex(space-between,flex-end);
+        
+        /*@media (max-width:670px) {
+           margin:1.8rem 0 0 1.7rem;
+        }*/
+    }
+        
+    &-left{
+         
+            
+        }
+    &-right{
+        width: (500/1100)*100vw;
+        
+        ul{
+            @include flex(space-between,flex-end);
+        }
+        
+
+        a{  
+            font-size:1.6rem;
+            color:$header-font-color;
+            font-weight:600;
+            letter-spacing:0.1em;
+            
+            /*@media (max-width:670px) {
+                font-size:2.1rem;
+            }*/
+        }
+         
+            
+        }
+           
+}
