@@ -1,42 +1,78 @@
 <!DOCTYPE html>
-  <html>
-  <head>
+<html>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
 
-  </head>
-            
-  <body>
- 
-    <header class="header">
-        <div class="container">
-        <div class="header-content">
-            <div class="header-left">
-                <a href="index.html"><img src="images/index_logo_01.png" srcset="images/index_logo_01.png 1x, images/index_logo_01@2x.png 2x" alt="藤岡設計事務所ロゴ">
-                    </a></div>
-            <div class="header-right">
-                <nav>
-                    <ul>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="service.html">Service</a></li>
-                        <li><a href="price.html">Price</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        </div>
+</head>
 
-        
-    </header>
-      
+<body>
+
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="header-left">
+                        <a href="index.html"><img src="images/index_logo_01.png" srcset="images/index_logo_01.png 1x, images/index_logo_01@2x.png 2x" alt="藤岡設計事務所ロゴ">
+                        </a>
+                    </div>
+                    <div class="header-right pc">
+                        <nav>
+                            <ul class="nav">
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="service.html">Service</a></li>
+                                <li><a href="price.html">Price</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="nav-ph">
+                    <nav>
+                        <div class="button">
+                            <a class="btn-open" href="#"></a>
+                        </div>
+                    </nav>
+                    <div class="overlay">
+                        <div class="wrap">
+                            <ul class="wrap-nav">
+                                <li><a href="index.html">Top</a>
+                                </li>
+                                <li><a href="about.html">About</a>
+                                </li>
+                                <li><a href="service.html">Service</a>
+                                    <ul>
+                                        <li><a href="service.html#01">IT法務</a></li>
+                                        <li><a href="service.html#02">ビザ申請業務</a></li>
+                                        <li><a href="service.html#03">民泊申請</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="price.html">Price</a>
+                                    <ul>
+                                        <li><a href="price.html#01">IT法務</a></li>
+                                        <li><a href="price.html#02">ビザ申請業務</a></li>
+                                        <li><a href="price.html#03">民泊申請</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="blog.html">Blog</a>
+                                <li><a href="contact.html">Contact</a>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </header>
       
     <main> 
         <section class="sub-top-wrapper" id="top">
@@ -45,7 +81,7 @@
             </div>
 
             <div  class="sub-mv"  style="
-                background: url('images/index_img_service_01@2x.jpg');
+                background: url('images/index_img_service_04@2x.jpg');
                 background-size:cover; 
                 background-position:center;">
             </div>
@@ -55,7 +91,7 @@
         
         <section class="service-content">
             <ul>
-                <li>
+                <li id="01">
                     <div class="service-content-text">
                         <div class="service-content-text01">
                             <h3>#01</h3>
@@ -75,12 +111,12 @@
                             <p>・契約書リスク診断</p>
                             <p>・契約書ドラフト作成</p>
                             <p>・IT法務研修など</p>
-                            <p class="button01"><a>料金ページへ</a></p>
+                            <p class="button01"><a href="price.html">料金ページへ</a></p>
                         </div>
                     </div>     
                 </li>
                 
-                <li>
+                <li id="02">
                     <div class="service-content-text">
                         <div class="service-content-text01">
                             <h3>#02</h3>
@@ -100,12 +136,12 @@
                             <p>・永住許可</p>
                             <p>・帰化申請</p>
                             <p>・国籍取得など</p>
-                            <p class="button01"><a>料金ページへ</a></p>
+                            <p class="button01"><a href="price.html">料金ページへ</a></p>
                         </div>
                     </div>
                 </li>
                 
-                <li>
+                <li id="03">
                     <div class="service-content-text">
                         <div class="service-content-text01">
                             <h3>#03</h3>
@@ -118,9 +154,9 @@
                     <div class="service-content-text03">
                         <div>
                             <div class="title">
-                                <h3>色々なご提案ができます。<br>直接当社までお問い合わせください</h3>
+                                <h3>色々なご提案ができます。<br>直接当社まで<br class="ph">お問い合わせください</h3>
                             </div>
-                            <p class="button01"><a>お問い合わせ</a></p>
+                            <p class="button01"><a href="contact.html">お問い合わせ</a></p>
                         </div>
                     </div>     
                 </li>
@@ -134,8 +170,8 @@
  
         
         <section class="contact" id="contact">
-            <p>まずはメールでお気軽にお問い合わせください</p>
-            <div class="button02"><a href="#">CONTACT</a></div>
+            <p>まずはメールで<br class="ph">お気軽にお問い合わせください</p>
+            <div class="button02"><a href="contact.html">CONTACT</a></div>
 
         </section>
         
@@ -145,6 +181,6 @@
     <footer>
     </footer>
 
-
+<script src="js/index.js"></script>
   </body>
 </html>
