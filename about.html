@@ -1,41 +1,79 @@
 <!DOCTYPE html>
-  <html>
-  <head>
+<html>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
 
-  </head>
-            
-  <body>
+</head>
 
-    <header class="header">
-        <div class="container">
-        <div class="header-content">
-            <div class="header-left">
-                <a href="index.html"><img src="images/index_logo_01.png" srcset="images/index_logo_01.png 1x, images/index_logo_01@2x.png 2x" alt="藤岡設計事務所ロゴ">
-                    </a></div>
-            <div class="header-right">
-                <nav>
-                    <ul>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="service.html">Service</a></li>
-                        <li><a href="price.html">Price</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+<body>
+
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="header-left">
+                        <a href="index.html"><img src="images/index_logo_01.png" srcset="images/index_logo_01.png 1x, images/index_logo_01@2x.png 2x" alt="藤岡設計事務所ロゴ">
+                        </a>
+                    </div>
+                    <div class="header-right pc">
+                        <nav>
+                            <ul class="nav">
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="service.html">Service</a></li>
+                                <li><a href="price.html">Price</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="nav-ph">
+                    <nav>
+                        <div class="button">
+                            <a class="btn-open" href="#"></a>
+                        </div>
+                    </nav>
+                    <div class="overlay">
+                        <div class="wrap">
+                            <ul class="wrap-nav">
+                                <li><a href="index.html">Top</a>
+                                </li>
+                                <li><a href="about.html">About</a>
+                                </li>
+                                <li><a href="service.html">Service</a>
+                                    <ul>
+                                        <li><a href="service.html#01">IT法務</a></li>
+                                        <li><a href="service.html#02">ビザ申請業務</a></li>
+                                        <li><a href="service.html#03">民泊申請</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="price.html">Price</a>
+                                    <ul>
+                                        <li><a href="price.html#01">IT法務</a></li>
+                                        <li><a href="price.html#02">ビザ申請業務</a></li>
+                                        <li><a href="price.html#03">民泊申請</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="blog.html">Blog</a>
+                                <li><a href="contact.html">Contact</a>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-        </div>
-        </div>
 
-        
-    </header>
+
+        </header>
       
       
     <main> 
@@ -53,14 +91,14 @@
         </section>
         
         <div class="about-text">
-                <p class="about-text01">Support your<br>web service</p>
-                <p class="about-text02">webを通して人々の心や生活が豊かになるよう、<br>
+                <p class="about-text01">Support <br class="ph">your<br class="pc">web service</p>
+                <p class="about-text02">webを通して<br class="ph">人々の心や生活が豊かになるよう、<br>
                     法律の面からサポートいたします。</p>  
         </div>
         
         <section class="about-intro">
             
-            <h2> 制作会社での経歴を活かしたご提案ができます</h2>
+            <h2> 制作会社での経歴を活かした<br class="ph">ご提案ができます</h2>
             <p>私はこれまでにIT系企業においてweb制作、新規webサービスの立ち上げ、ファンクラブビジネスを経験し「webが持つ可能性」を信じるようになりました。<br>
     「webが持つ可能性」とはwebを通して人々の心や生活がもっと豊かになっていくことです。
 <br><br>               
@@ -104,25 +142,44 @@
         <section class="access" id="access">
 
             <div id="map"></div>
-                <script>
-                  var map;
-                  function initMap() {
-                    map = new google.maps.Map(document.getElementById('map'), {
-                      center: {lat: 35.017224, lng: 135.756377},
-                      zoom: 17
-                    });
-                  }
-
-                </script>
+            
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD36cmAQH0VhKEbK88R9J2MvBEgrTjO_-w&callback=initMap"
     async defer></script>
+            <script>
+                function initMap() {
+                  var mapPosition = {lat: 35.017224, lng: 135.756377};
+                  var mapArea = document.getElementById('map');
+                  var mapOptions = {
+                    center: mapPosition,
+                    zoom: 18,
+                    styles: [
+                      {
+                        stylers: [
+                            {visibility: 'inherit'},
+                            {saturation: -90},
+                            
+                        ],
+                      },
+                    ],
+                  };
+                  var map = new google.maps.Map(mapArea, mapOptions);
+
+                  var markerOptions = {
+                    map: map,
+                    position: mapPosition,
+                    icon: 'images/index_icon_fujioka_01.png',
+                  };
+                  var marker = new google.maps.Marker(markerOptions);
+                }
+
+            </script>
             
         </section>
  
         
         <section class="contact" id="contact">
-            <p>まずはメールでお気軽にお問い合わせください</p>
-            <div class="button02"><a href="#">CONTACT</a></div>
+            <p>まずはメールで<br class="ph">お気軽にお問い合わせください</p>
+            <div class="button02"><a href="contact.html">CONTACT</a></div>
 
         </section>
         
@@ -132,6 +189,6 @@
     <footer>
     </footer>
 
-
+<script src="js/index.js"></script>
   </body>
 </html>

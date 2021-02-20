@@ -1,0 +1,117 @@
+
+/*contact*/
+
+.contact{
+    width:100%;
+    margin:0 auto;
+    @media (max-width:670px) {
+        padding:0 16px;
+    }
+    
+    p{
+        margin-bottom: 49px;
+        font-size:2rem;
+        font-weight:600;
+        color:$accent-font-color;
+        text-align: center;  
+        
+        @media (max-width:670px) {
+            font-size:20px;
+            line-height: 1.5;
+        }
+    }
+    
+    .button02{
+        @include button02(520);
+            margin:0 auto 101px;
+        
+    }
+    
+    &-form{
+        width:(840/1280)*100vw;
+        margin:215px auto 209px;
+        
+        @media (max-width:670px) {
+            width:auto;
+            padding:0 16px;
+            margin: 80px auto;
+        }
+        
+        h3{
+            margin-bottom: 231px;
+            font-size:3.2rem;
+            color:$blog-subtit-color;
+            letter-spacing: 0.12em;
+            text-align: center;
+            
+            @media (max-width:670px) {
+                font-size: 20px;
+                line-height: 1.2;
+                margin-bottom: 70px;
+            }
+        }
+        
+            
+            label{
+                width:100%;
+                height:34px;
+                font-size:1.8rem;
+                font-weight: 600;
+                color:$service-subtit-color;
+                letter-spacing: 0.12em;
+            }
+            
+            input{
+                
+            &[type="text"], &[type="number"], &[type="email"]{
+                width:100%;
+                height:78px;
+                margin-top:44px;
+                margin-bottom: 98px;
+                font-size:2rem;
+                color:$blog-index-color;
+                letter-spacing: 0.15em;
+                border:none;
+                border-bottom:1px solid #ADADAD;
+                background-color:none; 
+                
+                @media (max-width:670px) {
+                    height: 40px;
+                    margin: 10px 0 30px;
+                }
+            }
+            
+            &[type="submit"]{
+                @include button02(520);
+                margin:0 auto;
+                color:white;
+                font-size:3.2rem;
+                font-weight: 600;
+                letter-spacing: 0.15em;
+                display: block;
+                text-align: center;
+                padding:27px 0;
+                border:none;
+                
+                }
+            }
+            
+            textarea{
+                width:100%;
+                height:347px;
+                margin-top:44px;
+                margin-bottom: 98px;
+                font-size:1.6rem;
+                color:$blog-index-color;
+                letter-spacing: 0.15em;
+                border:1px solid #ADADAD;
+                background-color:none; 
+                @media (max-width:670px) {
+                    height: 200px;
+                }
+            }
+             
+            
+        
+    }
+}
